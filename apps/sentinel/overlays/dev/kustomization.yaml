@@ -8,9 +8,9 @@ resources:
 
 images:
   - name: sentinel/api-service
-    newName: sentinel/api-service
-    newTag: dev
+    newName: ghcr.io/stevebanin/sentinel-api-service
+    newTag: sha-bootstrap
   - name: sentinel/worker-service
-    newName: sentinel/worker-service
-    newTag: dev
+    newName: ghcr.io/stevebanin/sentinel-worker-service
+    newTag: sha-bootstrap
 

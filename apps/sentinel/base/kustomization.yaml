@@ -7,7 +7,6 @@ resources:
   - api-service/service.yaml
   - worker-service/deployment.yaml
   - worker-service/service.yaml
-  - monitoring/servicemonitors.yaml
   - postgres/deployment.yaml
   - postgres/service.yaml
 

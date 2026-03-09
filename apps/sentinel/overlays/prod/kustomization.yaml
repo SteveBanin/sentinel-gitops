@@ -14,5 +14,3 @@ images:
     newName: sentinel/worker-service
     newTag: prod-initial
 
-patches:
-  - path: servicemonitor-namespace-patch.yaml

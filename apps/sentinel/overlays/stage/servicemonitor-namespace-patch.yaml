@@ -1,0 +1,17 @@
+﻿apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: api-service
+  namespace: monitoring
+spec:
+  namespaceSelector:
+    matchNames: ["sentinel-stage"]
+---
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: worker-service
+  namespace: monitoring
+spec:
+  namespaceSelector:
+    matchNames: ["sentinel-stage"]

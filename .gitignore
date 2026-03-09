@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Local env / secrets files
+.env
+*.local
+secrets*.yaml
+*secret*.yaml
+
+# Terraform (if you add TF here later)
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log

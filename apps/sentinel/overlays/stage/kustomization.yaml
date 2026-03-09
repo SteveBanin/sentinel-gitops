@@ -1,0 +1,18 @@
+﻿apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: sentinel-stage
+
+resources:
+  - ../../base
+
+images:
+  - name: sentinel/api-service
+    newName: sentinel/api-service
+    newTag: stage-initial
+  - name: sentinel/worker-service
+    newName: sentinel/worker-service
+    newTag: stage-initial
+
+patches:
+  - path: servicemonitor-namespace-patch.yaml

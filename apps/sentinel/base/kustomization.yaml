@@ -10,12 +10,3 @@ resources:
   - postgres/deployment.yaml
   - postgres/service.yaml
 
-# Optional: generate Grafana dashboard ConfigMaps from infra/grafana/dashboards
-configMapGenerator:
-  - name: sentinel-grafana-dashboards
-    namespace: monitoring
-    files:
-      - grafana/dashboards/sentinel-overview.json
-    options:
-      labels:
-        grafana_dashboard: "1"

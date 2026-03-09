@@ -9,8 +9,8 @@ resources:
 images:
   - name: sentinel/api-service
     newName: sentinel/api-service
-    newTag: dev-initial
+    newTag: dev
   - name: sentinel/worker-service
     newName: sentinel/worker-service
-    newTag: dev-initial
+    newTag: dev
 
